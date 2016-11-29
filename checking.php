@@ -1,6 +1,6 @@
 <?php
 $q = $_REQUEST["q"];
-$filename = $q . ".txt";
+$filename = $q . ".zip";
 if (file_exists($filename)==0) {
   // echo $filename;
   echo ("<img src=\"tick.png\" alt=\"tick\" style=\"width:20px;height:20px;\">");

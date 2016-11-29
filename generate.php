@@ -15,7 +15,7 @@
   <div class="clear">&nbsp;</div>
 
   <ul id="nav">
-      <li class="home"><a href="http://csce.uark.edu/~senma/CSCE2214/index.html">Generator</a></li>
+      <li class="home"><a href="http://uaf132959.ddns.uark.edu/">Generator</a></li>
   </ul>
 
   <hr>
@@ -75,7 +75,7 @@
 <!-- <p id="Result"></p> -->
 <!-- <div id="Result"></div> -->
 
-<div id="dynamic"></div>
+<h2><div id="dynamic"></div></h2>
 
 <!-- <script type="text/javascript">
 $(document).ready(function() {
