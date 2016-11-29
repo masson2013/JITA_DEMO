@@ -1,11 +1,73 @@
-<html>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>JITA DEMO</title>
+</head>
 
+<body id="home">
+
+<div id="page">
+  <div id="name"><center><p>Just In Time Assembly (JITA)</p></center></div>
+  <div class="clear">&nbsp;</div>
+
+  <ul id="nav">
+      <li class="home"><a href="http://csce.uark.edu/~senma/CSCE2214/index.html">Generator</a></li>
+  </ul>
+
+  <hr>
+
+  <div id="detailsLeft">
+  <form action="generate.php" method="post">
+  <h3> System Name:
+    <span class = "regular">
+      <input type="text" name="sysname">
+    </span>
+  </h3>
+
+  <h3>FPGA Vendor:
+    <span class = "regular">
+      <input type="radio" name="vendor" value="Xilinx" checked><b>Xilinx</b>
+      <input type="radio" name="vendor" value="Altera" disabled="true"><b>Altera</b>
+    </span>
+  </h3>
+
+  <h3>CAD Tools Version:
+    <span class = "regular">
+      <input type="radio" name="tools" value="152" checked><b>Vivado 2015.2</b>
+      <input type="radio" name="tools" value="152" disabled="true"><b>Vivado 2015.4</b>
+    </span>
+  </h3>
+
+  <h3>Overlay Type:
+    <span class = "regular">
+      <select name="overlay">
+        <option value="1">1D Crossbar</option>
+        <option value="2">2D Switch</option>
+      </select>
+    </span>
+  </h3>
+
+  <h3>Number of PR Tiles:
+    <span class = "regular">
+      <select name="npr">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="8">8</option>
+      </select>
+    </span>
+  </h3>
+  <input type="submit">
+  </form>
+  </div>
+
+<!--   <div id="footer">
+  <hr class="hr">
+  <p class="left"><a href="http://www.uark.edu/" target="_new">University of Arkansas</a></p>
+  <p class="right"><a href="http://hthreads.csce.uark.edu/" target="_new">CSDL</a></p>
+  </div>
+ -->
+</div>
 </body>
 </html>
